@@ -1,4 +1,4 @@
-### JobProfiler
+### JobProfiler in Chinese
 ### Emma Mõttus, emma.mottus@ut.ee; René Mõttus, rene.mottus@ed.ac.uk
 ### Institute of Psychology, University of Tartu
 ### Department of Psychology, University of Edinburgh
@@ -43,6 +43,7 @@ occResponses <- as.matrix(occupationsMeans)
 weights <- as.matrix(weights)
 weightsBig5 <- as.matrix(weightsBig5)
 itemCors <- as.matrix(itemCors)
+
 ###
 
 ### UI: Pages (tabs), tabs (navtabs) on results page, elements within pages
@@ -54,7 +55,7 @@ language <- tabPanel("languageTab",
                           imageOutput("applogo", height = "fit-content"),
                           radioGroupButtons("lang", choiceNames = langOptions$language, choiceValues = langOptions$suffix, individual = TRUE, selected = character(0)),
                           actionButton("langOK", "OK", disabled = TRUE),
-                          "Find out which jobs are a good match for your personality traits"
+                          "了解哪些工作适合您的性格特征"
                      ))
 
 disclaimer <- tabPanel("disclaimerTab",
@@ -189,7 +190,7 @@ ui <- page_fluid(
     meta_social(
       title = filter(appText, ID %in% "title") %>% pull(en),
       description = filter(appText, ID %in% "descr") %>% pull(en),
-      url = "https://apps.psych.ut.ee/JobProfiler",
+      url = "https://apps.psych.ut.ee/b5jobs/",
       image = "https://apps.psych.ut.ee/static/appLogoSmall.jpg",
       image_alt = filter(appText, ID %in% "alt") %>% pull(en),
       twitter_creator = "@renemottus",
@@ -503,10 +504,10 @@ server <- function(input, output, session) {
     tagList(
       tags$br(),
       getText("fb52"),
-      rclipButton(inputId = "sharePriv", label = getText("fb53"), clipText = paste0("https://apps.psych.ut.ee/JobProfiler?reference=", ownSession, collapse="")),
+      rclipButton(inputId = "sharePriv", label = getText("fb53"), clipText = paste0("https://apps.psych.ut.ee/b5jobs?reference=", ownSession, collapse="")),
       tags$br(),
       getText("fb54"),
-      rclipButton(inputId = "sharePub", label = getText("fb55"), clipText = "https://apps.psych.ut.ee/JobProfiler?reference=publicshare"),
+      rclipButton(inputId = "sharePub", label = getText("fb55"), clipText = "https://apps.psych.ut.ee/b5jobs?reference=publicshare"),
       tags$br(),
       tags$small(getText("fb56"))
     )
@@ -519,7 +520,7 @@ server <- function(input, output, session) {
   output$retake <- renderUI({
     tagList(
       tags$br(),
-      tags$a(href=paste0("https://apps.psych.ut.ee/JobProfiler?reference=", ownSession, "REPEAT", collapse=""), getText("retake"))
+      tags$a(href=paste0("https://apps.psych.ut.ee/b5jobs?reference=", ownSession, "REPEAT", collapse=""), getText("retake"))
     )
   })
   
