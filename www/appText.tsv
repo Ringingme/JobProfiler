@@ -15,7 +15,7 @@ comp3	Who was the link shared by?	是谁与您分享的链接？
 disc1	Contact us: jobprofiler@ut.ee	联系我们：jobprofiler@ut.ee
 int1	The gender you identify with the most	您认为您的性别是
 int2	Your age	您的年龄
-int3	Which province, city and district do you live in?	"请选择您目前居住的省-市-区
+int3	Which Chinese province, city and district do you live or used to live in?	"请选择您的中国境内常住省-市-区（可直接输入区名搜索）
 "
 int4	Do you have a job?	您目前有工作吗？
 int5	What is your job title?	您的工作职位是什么？

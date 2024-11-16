@@ -6,7 +6,7 @@
 
 这个应用不提供专业的职业咨询，但是它可以帮助您更好地了解自己。
 
-如果您目前不居住在中国，[请点击此链接](https://apps.psych.ut.ee/JobProfiler)。
+如果您常居中国境外十年及以上，[请点击此链接](https://apps.psych.ut.ee/JobProfiler)。
 
 点击 ”继续“按钮，即表示您已阅读并知晓：
 

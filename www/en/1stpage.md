@@ -6,6 +6,8 @@ This app helps you to explore this.
 
 It does not provide occupational counselling, but it can help you learn about yourself.
 
+If you have lived outside China for ten or more years, please use [this version of the app](https://apps.psych.ut.ee/jobprofiler/).
+
 By clicking Continue, you acknowledge that
 
 * you are aged between 18 and 70 years
